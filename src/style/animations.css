@@ -1,0 +1,44 @@
+.header-link {
+    position: relative; /* Add this line */
+}
+
+.header-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #47d4ff;
+    transition: transform 0.25s ease-out;
+}
+
+.header-link:hover::after {
+    transform: scaleX(1);
+}
+
+.header-link::after {
+    transform-origin: bottom right;
+}
+
+.header-link:hover::after {
+    transform-origin: bottom left;
+}
+
+.header-link a:hover {
+    transition: 0.25s ease-in-out;
+    color: #90edff;
+}
+
+header .header-left {
+    transition: 0.3s;
+}
+
+.header-left a h1 {
+    transition: transform .18s ease-in-out;
+}
+
+.header-left a h1:hover {
+    transform: scale(1.08);
+}

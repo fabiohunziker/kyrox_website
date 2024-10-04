@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <!-- Header Section -->
 <header>
     <div class="headercontainer">
         <div class="header-left">
-            <a href="#section1"><img src="imgs/logo.png" alt="Logo" class="logo"></a> <!-- Replace with your logo -->
-            <h1>Kyrox</h1>
+            <!--            <a href="#home"><img src="imgs/logo.png" alt="Logo" class="logo"></a> &lt;!&ndash; Replace with your logo &ndash;&gt;-->
+            <a href="#"><h1>KYROX MUSIC</h1></a>
         </div>
         <nav class="header-right">
             <ul>
-                <li><a href="#section1">Home</a></li>
-                <li><a href="#section2">About</a></li>
-                <li><a href="#music">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><p class="header-link"><a href="#home" >Home</a></p></li>
+                <li><p class="header-link"><a href="#about">About</a></p></li>
+                <li><p class="header-link"><a href="#music">Music</a></p></li>
+                <li><p class="header-link"><a href="#contact">Contact</a></p></li>
             </ul>
         </nav>
     </div>
@@ -28,7 +33,7 @@
 <!-- Main Body Section -->
 <main>
     <!-- Section 1: Home -->
-    <section id="section1" class="hero-section">
+    <section id="home" class="home-section">
         <div class="container">
             <h2>KYROX</h2>
             <p>Swiss music producer and DJ</p>
@@ -36,18 +41,59 @@
     </section>
 
     <!-- Section 2: About -->
-    <section id="section2" class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
             <h2>About me</h2>
-            <p>I live in switzerland, my passion is making music.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I’m Kyrox, a Swiss DJ and music producer driven by a deep passion for creating unique and captivating sounds. Based in Switzerland, my journey in music started at a young age, and since then, I’ve
+                        been dedicated to pushing the boundaries of electronic music.</p>
+                    <br>
+                    <p>As a producer, I’m constantly exploring new sounds and techniques, looking for ways to evolve my music and bring something fresh to the scene. As a DJ, I love curating sets that not only make
+                        people
+                        move but leave a lasting impact.</p>
+                    <br>
+                    <p>Switzerland may be my home base, but music is my universal language, and I’m excited to share it with the world.</p>
+                </div>
+                <div class="about-image">
+                    <img src="imgs/about-me.jpeg" alt="About Image">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Section 3: Services -->
-    <section id="music" class="services-section">
+    <!-- Section 3: Music -->
+    <section id="music" class="music-section">
         <div class="container">
             <h2>Music</h2>
             <p>Here you can find some of my latest music.</p>
+            <br>
+            <div class="soundcloud-embed-container">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1873089782%3Fsecret_token%3Ds-YtSxCMnsdwY&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                </iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/kyrox-music" title="Kyrox" target="_blank" style="color: #cccccc; text-decoration: none;">Kyrox</a> ·
+                    <a href="https://soundcloud.com/djkyrox/sets/edm/s-YtSxCMnsdwY"
+                       title="EDM" target="_blank"
+                       style="color: #cccccc; text-decoration: none;">EDM</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Fabio Nicola Hunziker</p>
+            <p class="social-links-mail"><a href="mailto:fabio.hunziker07@gmail.com">fabio.hunziker07@gmail.com</a></p>
+            <p>+41 79 885 66 62</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/kyrox.music/" id="social-link-1">Instagram</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Soundcloud</a>
         </div>
     </section>
 </main>
@@ -55,13 +101,8 @@
 <!-- Footer Section -->
 <footer>
     <div class="container">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a> |
-            <a href="#">LinkedIn</a>
-        </div>
+        <p>&copy; 2024 Kyrox Music. All rights reserved.</p>
+
         <div class="legal-info">
             <a href="#">Privacy Policy</a> |
             <a href="#">Terms of Service</a>

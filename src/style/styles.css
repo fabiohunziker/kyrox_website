@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
@@ -22,7 +27,9 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
+    position: sticky;
+    top: 0;
+    background-color: #0c0c0c;
     color: white;
     padding: 10px 0;
 }
@@ -30,6 +37,12 @@ header {
 header .header-left {
     display: flex;
     align-items: center;
+}
+
+header .header-left a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 header .header-left h1 {
@@ -57,10 +70,6 @@ header nav ul li a {
     font-size: 1.2em;
 }
 
-header nav ul li a:hover {
-    color: #47e3ff;
-}
-
 nav ul {
     list-style: none;
     text-align: center;
@@ -78,27 +87,29 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    color: #47e3ff;
-}
-
 /* Hero Section */
-.hero-section {
+.home-section .container {
+    height: 95vh;
+    background-color: black;
     background-image: url("../imgs/background.jpg");
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
+    padding: 13% 0;
     text-align: center;
 }
 
-.hero-section h2 {
-    font-size: 3em;
+.home-section {
+    background-color: black;
+}
+
+.home-section h2 {
+    font-size: 5em;
     margin-bottom: 20px;
 }
 
-.hero-section p {
-    font-size: 1.2em;
+.home-section p {
+    font-size: 2.5em;
 }
 
 /* About Section */
@@ -110,57 +121,126 @@ nav ul li a:hover {
 }
 
 .about-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 35px;
+    font-weight: bold;
 }
 
 .about-section p {
     font-size: 1.1em;
 }
 
+.about-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between text and image */
+    align-items: center; /* Align content vertically */
+    flex-wrap: wrap; /* Make it responsive by wrapping content on smaller screens */
+}
+
+.about-content .about-text {
+    flex: 1; /* Take up available space */
+    max-width: 100%; /* Ensure the text doesn't exceed half the container */
+    text-align: justify; /* Align the text to the left */
+    padding-left: 15%;
+    padding-right: 0;
+}
+
+.about-content .about-image {
+    width: 50%;
+    height: 100%; /* Maintain aspect ratio */
+    text-align: right;
+    padding-right: 10%;
+}
+
+.about-content .about-image img {
+    flex: 1; /* Take up available space */
+    max-width: 55%; /* Ensure the image doesn't exceed half the container */
+}
+
 /* Services Section */
-.services-section {
+.music-section {
     background-color: #292929;
     color: floralwhite;
     padding: 60px 0;
     text-align: center;
 }
 
-.services-section h2 {
+.music-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.services-section p {
+.music-section p {
     font-size: 1.1em;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+.soundcloud-embed-container {
+    max-width: 50%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.soundcloud-embed-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Services Section */
+.contact-section {
+    background-color: #f5f9fa;
+    color: #202020;
+    padding: 60px 0;
     text-align: center;
 }
 
-footer .social-links a {
-    color: white;
+.contact-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.contact-section .social-links a {
+    color: #202020;
     text-decoration: none;
     margin: 0 10px;
 }
 
-footer .social-links a:hover {
-    color: #ffb347;
+.contact-section .social-links-mail a {
+    color: #202020;
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+.contact-section .social-links-mail a:hover {
+    color: #47e3ff;
+}
+
+.contact-section .social-links a:hover {
+    color: #47e3ff;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f9fa;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    height: 13vh;
 }
 
 footer .legal-info a {
-    color: white;
+    color: #202020;
     text-decoration: none;
     margin: 0 10px;
 }
 
 footer .legal-info a:hover {
-    color: #ffb347;
+    color: #47e3ff;
 }
 
 /* Responsive Design */
@@ -187,10 +267,11 @@ footer .legal-info a:hover {
 
     header .header-left {
         margin-bottom: 20px;
+        transition: 0.3s;
     }
 
-    header .header-left h1 {
-        font-size: 1.2em;
+    header .header-left a h1 {
+        font-size: 1.5em;
     }
 }
 
@@ -223,11 +304,11 @@ footer .legal-info a:hover {
         font-size: 1.5em;
     }
 
-    .hero-section h2 {
+    .home-section h2 {
         font-size: 2em;
     }
 
-    .hero-section p {
+    .home-section p {
         font-size: 1em;
     }
 }
