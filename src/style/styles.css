@@ -16,6 +16,8 @@ body {
     background-color: #f4f4f4;
 }
 
+
+/* ++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++ */
 .headercontainer {
     width: 90%;
     margin: 0 auto;
@@ -55,39 +57,64 @@ header .logo {
     height: auto;
 }
 
-header nav ul {
+.header-list {
     list-style: none;
     display: flex;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul {
-    list-style: none;
     text-align: center;
     margin-top: 10px;
 }
 
-nav ul li {
+.nav-list-item {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-list-item a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
 }
 
-/* Hero Section */
+.lang-icon {
+    height: 20px;
+    filter: invert(100%);
+    margin-top: 20%;
+}
+
+.lang-dropdown {
+    position: relative;
+}
+
+.lang-dropdown:hover .lang-dropdown-content {
+    display: block;
+}
+
+.lang-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+    color: #0c0c0c;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.lang-dropdown-content ul li {
+    padding: 5px 20px;
+    display: block;
+}
+
+.lang-dropdown-content ul li a {
+    font-size: 1em;
+}
+
+.lang-dropdown-content ul li p a {
+    color: #0c0c0c;
+}
+
+
+/* ++++++++++++++++++++++++++++++ HOME SECTION ++++++++++++++++++++++++++++++ */
 .home-section .container {
     height: 95vh;
     background-color: black;
@@ -112,7 +139,107 @@ nav ul li a {
     font-size: 2.5em;
 }
 
-/* About Section */
+/* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
+.shows-section .container {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.shows-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.shows-section p {
+    margin-bottom: 10px;
+}
+
+#shows-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.show-item {
+    background-color: #252525;
+    margin-top: 15px;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.show-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.show-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.show-details p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.show-details h3 {
+    font-size: 1.5em; /* Larger title */
+}
+
+.show-title {
+    margin: 15px 20px;
+    text-align: left;
+    line-height: 30px;
+    font-size: 0.85em;
+    width: 25%;
+}
+
+.show-info {
+    display: flex;
+    flex-direction: column; /* Stack title and date/time vertically */
+    margin-top: 10px;
+    text-align: left;
+    width: 20%;
+}
+
+.show-venue {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: left;
+    width: 23%;
+}
+
+.show-links {
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+.button {
+    background-color: #007bff; /* Bootstrap-like primary color */
+    color: white; /* White text */
+    padding: 5px 8px; /* Padding */
+    margin: 5px 5px;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background color change */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
 .about-section {
     background-color: #393939;
     color: floralwhite;
@@ -157,7 +284,7 @@ nav ul li a {
     max-width: 55%; /* Ensure the image doesn't exceed half the container */
 }
 
-/* Services Section */
+/* ++++++++++++++++++++++++++++++ MUSIC SECTION ++++++++++++++++++++++++++++++ */
 .music-section {
     background-color: #292929;
     color: floralwhite;
@@ -186,7 +313,7 @@ nav ul li a {
     aspect-ratio: 16 / 9;
 }
 
-/* Services Section */
+/* ++++++++++++++++++++++++++++++ CONTACT SECTION ++++++++++++++++++++++++++++++ */
 .contact-section {
     background-color: #f5f9fa;
     color: #202020;
@@ -224,7 +351,8 @@ nav ul li a {
     color: #47e3ff;
 }
 
-/* Footer */
+
+/* ++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++ */
 footer {
     background-color: #f5f9fa;
     color: black;
@@ -243,39 +371,8 @@ footer .legal-info a:hover {
     color: #47e3ff;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .header-left h1 {
-        font-size: 1.5em;
-    }
 
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .headercontainer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header .header-left {
-        margin-bottom: 20px;
-        transition: 0.3s;
-    }
-
-    header .header-left a h1 {
-        font-size: 1.5em;
-    }
-}
-
-/* Responsive Design */
+/* ++++++++++++++++++++++++++++++ RESPONSIVE DESIGN ++++++++++++++++++++++++++++++ */
 @media (max-width: 768px) {
     .headercontainer {
         flex-direction: column;
@@ -310,5 +407,37 @@ footer .legal-info a:hover {
 
     .home-section p {
         font-size: 1em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .header-left h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .headercontainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .header-left {
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+
+    header .header-left a h1 {
+        font-size: 1.5em;
     }
 }

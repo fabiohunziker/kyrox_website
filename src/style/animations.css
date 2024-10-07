@@ -42,3 +42,27 @@ header .header-left {
 .header-left a h1:hover {
     transform: scale(1.08);
 }
+
+.lang-link:hover {
+    transition: 0.2s ease-in-out;
+    color: #90edff;
+}
+
+.lang-dropdown:hover .lang-link {
+    color: #90edff;
+}
+
+.lang-dropdown-content ul li:hover {
+    transition: 0.1s ease-in-out;
+    background-color: #d6d6d6;
+}
+
+.lang-icon:hover {
+    transition: 0.15s ease-in-out;
+    transform: scale(1.2);
+}
+
+.lang-dropdown:hover .lang-icon {
+    transition: 0.15s ease-in-out;
+    transform: scale(1.2);
+}

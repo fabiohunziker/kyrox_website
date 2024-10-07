@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
 <!-- Header Section -->
@@ -20,11 +21,23 @@
             <a href="#"><h1>KYROX MUSIC</h1></a>
         </div>
         <nav class="header-right">
-            <ul>
-                <li><p class="header-link"><a href="#home" >Home</a></p></li>
-                <li><p class="header-link"><a href="#about">About</a></p></li>
-                <li><p class="header-link"><a href="#music">Music</a></p></li>
-                <li><p class="header-link"><a href="#contact">Contact</a></p></li>
+            <ul class="header-list">
+                <li class="nav-list-item">
+                    <div class="lang-dropdown">
+                        <p class="lang-link"><img src="imgs/icons/lang-icon.png" alt="language" class="lang-icon"></p>
+                        <div class="lang-dropdown-content">
+                            <ul>
+                                <li class="lang-element"><p class="lang-link"><a href="#" onclick="changeLanguage('en')">English</a></p></li>
+                                <li class="lang-element"><p class="lang-link"><a href="#" onclick="changeLanguage('de')">Deutsch</a></p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-list-item"><p class="header-link"><a href="#home" >Home</a></p></li>
+                <li class="nav-list-item"><p class="header-link"><a href="#shows" >Shows</a></p></li>
+                <li class="nav-list-item"><p class="header-link"><a href="#about">About</a></p></li>
+                <li class="nav-list-item"><p class="header-link"><a href="#music">Music</a></p></li>
+                <li class="nav-list-item"><p class="header-link"><a href="#contact">Contact</a></p></li>
             </ul>
         </nav>
     </div>
@@ -32,28 +45,37 @@
 
 <!-- Main Body Section -->
 <main>
-    <!-- Section 1: Home -->
+    <!-- Section: Home -->
     <section id="home" class="home-section">
         <div class="container">
-            <h2>KYROX</h2>
-            <p>Swiss music producer and DJ</p>
+            <h2 data-i18n="home_title"></h2>
+            <p data-i18n="home_info"></p>
         </div>
     </section>
 
-    <!-- Section 2: About -->
+    <!-- Section: Shows -->
+    <section id="shows" class="shows-section">
+        <div class="container">
+            <h2 data-i18n="shows_title"></h2>
+            <p data-i18n="shows_info"></p>
+            <div id="shows-container">
+                <ul id="shows-list">
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: About -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2>About me</h2>
+            <h2 data-i18n="about_title">About me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I’m Kyrox, a Swiss DJ and music producer driven by a deep passion for creating unique and captivating sounds. Based in Switzerland, my journey in music started at a young age, and since then, I’ve
-                        been dedicated to pushing the boundaries of electronic music.</p>
+                    <p data-i18n="about_p1"></p>
                     <br>
-                    <p>As a producer, I’m constantly exploring new sounds and techniques, looking for ways to evolve my music and bring something fresh to the scene. As a DJ, I love curating sets that not only make
-                        people
-                        move but leave a lasting impact.</p>
+                    <p data-i18n="about_p2"></p>
                     <br>
-                    <p>Switzerland may be my home base, but music is my universal language, and I’m excited to share it with the world.</p>
+                    <p data-i18n="about_p3"></p>
                 </div>
                 <div class="about-image">
                     <img src="imgs/about-me.jpeg" alt="About Image">
@@ -65,8 +87,8 @@
     <!-- Section 3: Music -->
     <section id="music" class="music-section">
         <div class="container">
-            <h2>Music</h2>
-            <p>Here you can find some of my latest music.</p>
+            <h2 data-i18n="music_title"></h2>
+            <p data-i18n="music_p1"></p>
             <br>
             <div class="soundcloud-embed-container">
                 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"

@@ -1,0 +1,20 @@
+{
+  "header_home": "Home",
+  "header_about": "About",
+  "header_music": "Music",
+  "header_contact": "Contact",
+
+  "home_title": "KYROX",
+  "home_info": "Swiss DJ and producer",
+
+  "shows_title": "Shows",
+  "shows_info": "All my upcoming shows",
+
+  "about_title": "About me",
+  "about_p1": "I’m Kyrox, a Swiss DJ and music producer driven by a deep passion for creating unique and captivating sounds. Based in Switzerland, my journey in music started at a young age, and since then, I’ve been dedicated to pushing the boundaries of electronic music.",
+  "about_p2": "As a producer, I’m constantly exploring new sounds and techniques, looking for ways to evolve my music and bring something fresh to the scene. As a DJ, I love curating sets that not only make people move but leave a lasting impact.",
+  "about_p3": "Switzerland may be my home base, but music is my universal language, and I’m excited to share it with the world.",
+
+  "music_title": "Music",
+  "music_p1": "Here you can find some of my latest music."
+}
