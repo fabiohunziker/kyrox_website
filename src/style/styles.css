@@ -125,7 +125,6 @@ header .header-left h1 {
 
 /* ++++++++++++++++++++++++++++++ HOME SECTION ++++++++++++++++++++++++++++++ */
 .home-section .container {
-    position: relative;
     height: 95vh;
     background-color: black;
     background-image: url("../imgs/background.jpg");
@@ -133,22 +132,6 @@ header .header-left h1 {
     background-position: center;
     color: #fffcfc;
     text-align: center;
-    z-index: 1;
-}
-
-.home-section .container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with opacity */
-    z-index: -1; /* Make sure the overlay is behind the content */
-}
-
-.home-section .container * {
-    position: relative; /* Ensure all child elements stay above the overlay */
 }
 
 .home-section {
@@ -168,7 +151,7 @@ header .header-left h1 {
 .shows-section .container {
     background-color: #3e3e3e;
     color: white;
-    padding: 60px 0;
+    padding: 25px 0 40px 0;
     text-align: center;
 }
 
