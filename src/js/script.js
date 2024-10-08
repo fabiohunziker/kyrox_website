@@ -1,3 +1,9 @@
+//Toggle Burger Menu
+function toggleBurgerMenu() {
+    const nav = document.querySelector(".header-right");
+    nav.classList.toggle("active");
+}
+
 // Function to update content based on selected language
 function updateContent(langData) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -70,3 +76,10 @@ window.addEventListener('DOMContentLoaded', async () => {
 });
 
 document.addEventListener('DOMContentLoaded', loadShows)
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("burger-menu").addEventListener("click", function() {
+        const nav = document.querySelector(".header-right");
+        nav.classList.toggle("active");
+    });
+});

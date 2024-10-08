@@ -22,24 +22,29 @@
         </div>
         <nav class="header-right">
             <ul class="header-list">
+                <li class="nav-list-item"><p class="header-link"><a href="#home" onclick="toggleBurgerMenu()">Home</a></p></li>
+                <li class="nav-list-item"><p class="header-link"><a href="#shows" onclick="toggleBurgerMenu()">Shows</a></p></li>
+                <li class="nav-list-item"><p class="header-link"><a href="#about" onclick="toggleBurgerMenu()">About</a></p></li>
+<!--                <li class="nav-list-item"><p class="header-link"><a href="#music" onclick="toggleBurgerMenu()">Music</a></p></li>-->
+                <li class="nav-list-item"><p class="header-link"><a href="#contact" onclick="toggleBurgerMenu()">Contact</a></p></li>
                 <li class="nav-list-item">
                     <div class="lang-dropdown">
                         <p class="lang-link"><img src="imgs/icons/lang-icon.png" alt="language" class="lang-icon"></p>
                         <div class="lang-dropdown-content">
                             <ul>
-                                <li class="lang-element"><p class="lang-link"><a href="#" onclick="changeLanguage('en')">English</a></p></li>
-                                <li class="lang-element"><p class="lang-link"><a href="#" onclick="changeLanguage('de')">Deutsch</a></p></li>
+                                <li class="lang-element"><p class="lang-link"><a href="#" onclick="changeLanguage('en');toggleBurgerMenu()">English</a></p></li>
+                                <li class="lang-element"><p class="lang-link"><a href="#" onclick="changeLanguage('de');toggleBurgerMenu()">Deutsch</a></p></li>
                             </ul>
                         </div>
                     </div>
                 </li>
-                <li class="nav-list-item"><p class="header-link"><a href="#home" >Home</a></p></li>
-                <li class="nav-list-item"><p class="header-link"><a href="#shows" >Shows</a></p></li>
-                <li class="nav-list-item"><p class="header-link"><a href="#about">About</a></p></li>
-                <li class="nav-list-item"><p class="header-link"><a href="#music">Music</a></p></li>
-                <li class="nav-list-item"><p class="header-link"><a href="#contact">Contact</a></p></li>
             </ul>
         </nav>
+        <div class="burger-menu" id="burger-menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+        </div>
     </div>
 </header>
 
@@ -85,24 +90,24 @@
     </section>
 
     <!-- Section 3: Music -->
-    <section id="music" class="music-section">
-        <div class="container">
-            <h2 data-i18n="music_title"></h2>
-            <p data-i18n="music_p1"></p>
-            <br>
-            <div class="soundcloud-embed-container">
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1873089782%3Fsecret_token%3Ds-YtSxCMnsdwY&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                </iframe>
-                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    <a href="https://soundcloud.com/kyrox-music" title="Kyrox" target="_blank" style="color: #cccccc; text-decoration: none;">Kyrox</a> ·
-                    <a href="https://soundcloud.com/djkyrox/sets/edm/s-YtSxCMnsdwY"
-                       title="EDM" target="_blank"
-                       style="color: #cccccc; text-decoration: none;">EDM</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--    <section id="music" class="music-section">-->
+<!--        <div class="container">-->
+<!--            <h2 data-i18n="music_title"></h2>-->
+<!--            <p data-i18n="music_p1"></p>-->
+<!--            <br>-->
+<!--            <div class="soundcloud-embed-container">-->
+<!--                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"-->
+<!--                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1873089782%3Fsecret_token%3Ds-YtSxCMnsdwY&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">-->
+<!--                </iframe>-->
+<!--                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">-->
+<!--                    <a href="https://soundcloud.com/kyrox-music" title="Kyrox" target="_blank" style="color: #cccccc; text-decoration: none;">Kyrox</a> ·-->
+<!--                    <a href="https://soundcloud.com/djkyrox/sets/edm/s-YtSxCMnsdwY"-->
+<!--                       title="EDM" target="_blank"-->
+<!--                       style="color: #cccccc; text-decoration: none;">EDM</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <!-- Section 4: Contact -->
     <section id="contact" class="contact-section">

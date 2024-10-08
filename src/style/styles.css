@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: -1;
 }
 
 /* Header */
@@ -34,6 +35,7 @@ header {
     background-color: #0c0c0c;
     color: white;
     padding: 10px 0;
+    z-index: 3;
 }
 
 header .header-left {
@@ -52,16 +54,10 @@ header .header-left h1 {
     margin-left: 15px;
 }
 
-header .logo {
-    width: 50px; /* Adjust the logo size */
-    height: auto;
-}
-
 .header-list {
     list-style: none;
     display: flex;
     text-align: center;
-    margin-top: 10px;
 }
 
 .nav-list-item {
@@ -113,17 +109,46 @@ header .logo {
     color: #0c0c0c;
 }
 
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-bar {
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    margin: 4px 0;
+}
+
 
 /* ++++++++++++++++++++++++++++++ HOME SECTION ++++++++++++++++++++++++++++++ */
 .home-section .container {
+    position: relative;
     height: 95vh;
     background-color: black;
     background-image: url("../imgs/background.jpg");
     background-size: cover;
     background-position: center;
-    color: white;
-    padding: 13% 0;
+    color: #fffcfc;
     text-align: center;
+    z-index: 1;
+}
+
+.home-section .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with opacity */
+    z-index: -1; /* Make sure the overlay is behind the content */
+}
+
+.home-section .container * {
+    position: relative; /* Ensure all child elements stay above the overlay */
 }
 
 .home-section {
@@ -131,15 +156,15 @@ header .logo {
 }
 
 .home-section h2 {
+    padding-top: 30vh;
     font-size: 5em;
-    margin-bottom: 20px;
 }
 
 .home-section p {
     font-size: 2.5em;
 }
 
-/* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
 .shows-section .container {
     background-color: #3e3e3e;
     color: white;
@@ -373,9 +398,20 @@ footer .legal-info a:hover {
 
 
 /* ++++++++++++++++++++++++++++++ RESPONSIVE DESIGN ++++++++++++++++++++++++++++++ */
+@media (max-width: 900px) {
+    .headercontainer {
+        width: 100%;
+    }
+
+    .nav-list-item {
+        display: inline;
+        margin: 0 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .headercontainer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -383,61 +419,242 @@ footer .legal-info a:hover {
         font-size: 2em;
     }
 
-    header nav ul {
+    .header-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        align-items: flex-end;
+        background-color: #0c0c0c;
+    }
+
+    .nav-list-item {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 6%;
+    }
+
+    .lang-dropdown {
+        margin-bottom: 10px;
+    }
+
+    .burger-menu {
+        margin: 15px 10px;
+        display: flex;
+    }
+
+    .header-right.active .header-list {
+        display: flex;
+    }
+
+    .header-left h1 {
+        font-size: 1.5em;
+    }
+
+    .lang-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        z-index: 1;
+        color: #0c0c0c;
+        top: 100%;
+        transform: translate(-85%);
+    }
+
+
+    /* ++++++++++++++++++++++++++++++ HOME SECTION ++++++++++++++++++++++++++++++ */
+    .home-section {
+        max-height: 85vh;
+    }
+
+    .home-section h2 {
+        padding-top: 30vh;
+        font-size: 4em;
+    }
+
+    .home-section p {
+        font-size: 2em;
+    }
+
+
+    /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
+    #shows-list {
+        list-style-type: none;
+        display: flex;
         flex-direction: column;
     }
 
-    header nav ul li {
-        margin: 10px 0;
+    .show-item {
+        width: 65%;
+    }
+
+    .show-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-details p {
+        margin: 5px 0; /* Space between paragraphs */
+        text-align: center;
+    }
+
+    .show-details h3 {
+        font-size: 1.5em; /* Larger title */
+    }
+
+    .show-title {
+        width: 100%;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    .show-info {
+        display: flex;
+        flex-direction: row; /* Stack title and date/time vertically */
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .show-info p {
+        margin: 0 10px;
+    }
+
+    .show-venue {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .show-links {
+        margin: 5px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .button {
+        margin-bottom: 15px;
+    }
+
+    /* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
+    .about-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-content .about-text {
+        text-align: justify;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .about-content .about-image {
+        width: 50%;
+        padding: 0;
+        margin-top: 6vh;
+    }
+
+    .about-content .about-image img {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .headercontainer {
         width: 100%;
+        flex-direction: row;
+        height: 50px;
     }
 
     header h1 {
         font-size: 1.5em;
     }
 
-    .home-section h2 {
-        font-size: 2em;
-    }
-
-    .home-section p {
-        font-size: 1em;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .header-left h1 {
-        font-size: 1.5em;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .headercontainer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header .header-left {
-        margin-bottom: 20px;
+    .header-left {
         transition: 0.3s;
     }
 
-    header .header-left a h1 {
+    .header-left a h1 {
         font-size: 1.5em;
+    }
+
+    .header-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        align-items: flex-end;
+        background-color: #0c0c0c;
+    }
+
+    .nav-list-item {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 20px;
+    }
+
+    .lang-dropdown {
+        margin-bottom: 10px;
+    }
+
+    .burger-menu {
+        margin: 15px 10px;
+        display: flex;
+    }
+
+    .header-right.active .header-list {
+        display: flex;
+    }
+
+
+    /* ++++++++++++++++++++++++++++++ HOME SECTION ++++++++++++++++++++++++++++++ */
+    .home-section {
+        max-height: 80vh;
+    }
+
+    .home-section h2 {
+        padding-top: 30vh;
+        font-size: 2.7em;
+    }
+
+    .home-section p {
+        font-size: 1.6em;
+    }
+
+    /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
+    .show-item {
+        width: 85%;
+    }
+
+    /* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
+    .about-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-content .about-text {
+        text-align: justify;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .about-content .about-image {
+        width: 50%;
+        padding: 0;
+        margin-top: 6vh;
+    }
+
+    .about-content .about-image img {
+        max-width: 100%;
     }
 }
