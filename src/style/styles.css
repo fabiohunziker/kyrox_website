@@ -122,6 +122,12 @@ header .header-left h1 {
     margin: 4px 0;
 }
 
+.nav-separator {
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+
 
 /* ++++++++++++++++++++++++++++++ HOME SECTION ++++++++++++++++++++++++++++++ */
 .home-section .container {
@@ -145,6 +151,22 @@ header .header-left h1 {
 
 .home-section p {
     font-size: 2.5em;
+    margin-bottom: 7px;
+}
+
+.book-button {
+    font-size: 0.5em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    padding: 8px 25px;
+    border-radius: 3px;
+    transition: 0.1s background-color;
+}
+
+.book-button:hover {
+    background-color: #e9e4e4;
 }
 
 /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
@@ -182,7 +204,7 @@ header .header-left h1 {
 }
 
 .show-item:hover {
-    transform: translateY(-5px);
+    transform: translateX(5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -376,7 +398,7 @@ footer .legal-info a {
 }
 
 footer .legal-info a:hover {
-    color: #47e3ff;
+    color: #1abdd1;
 }
 
 
@@ -413,10 +435,16 @@ footer .legal-info a:hover {
         background-color: #0c0c0c;
     }
 
+    .nav-separator {
+        color: white;
+        width: 100%;
+        height: 5px;
+    }
+
     .nav-list-item {
         margin-top: 8px;
         margin-bottom: 8px;
-        margin-right: 6%;
+        margin-right: 4%;
     }
 
     .lang-dropdown {
