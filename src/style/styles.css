@@ -401,6 +401,12 @@ footer .legal-info a:hover {
     color: #1abdd1;
 }
 
+#bookings-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 
 /* ++++++++++++++++++++++++++++++ RESPONSIVE DESIGN ++++++++++++++++++++++++++++++ */
 @media (max-width: 900px) {

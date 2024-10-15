@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYROX MUSIC - Bookings</title>
+    <link rel="icon" href="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLWljb24tMjRfMS5wbmc.png">
+    <link rel="stylesheet" href="../../style/bookings.css">
+    <link rel="stylesheet" href="../../style/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <script src="../../js/script.js"></script>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <div class="headercontainer">
+        <div class="header-left">
+            <!--            <a href="#home"><img src="imgs/logo.png" alt="Logo" class="logo"></a> &lt;!&ndash; Replace with your logo &ndash;&gt;-->
+            <a href="../../index.html"><h1>KYROX MUSIC</h1></a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Body Section -->
+<main>
+
+    <div class="container">
+        <h1>Booking:</h1>
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</main>
+
+<!-- Footer Section -->
+<footer id="bookings-footer">
+    <div class="container">
+        <p>&copy; 2024 Kyrox Music. All rights reserved.</p>
+
+        <div class="legal-info">
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

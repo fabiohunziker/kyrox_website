@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+/* ++++++++++++++++++++++++++++++ HEADER ++++++++++++++++++++++++++++++ */
+.headercontainer {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 10px 0;
+    z-index: 3;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .header-left a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .header-left h1 {
+    font-size: 1.8em;
+    margin-left: 15px;
+}
+
+/* ++++++++++++++++++++++++++++++ MAIN ++++++++++++++++++++++++++++++ */
+main {
+    background-color: #404040;
+}
+
+.container {
+    margin: auto;
+    padding-top: 5vh;
+    width: 60%;
+}
+
+.container h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+label {
+    color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #1abdd1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #3bd7ea;
+}
+
+/* ++++++++++++++++++++++++++++++ FOOTER ++++++++++++++++++++++++++++++ */
+footer {
+    background-color: #f5f9fa;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .legal-info a {
+    color: #202020;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .legal-info a:hover {
+    color: #1abdd1;
+}
