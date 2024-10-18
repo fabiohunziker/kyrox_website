@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
     <script src="../../js/script.js"></script>
+    <script src="../../js/bookings-form.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 </head>
 <body>
 <!-- Header Section -->
@@ -26,16 +29,18 @@
 
 <!-- Main Body Section -->
 <main>
-
+    <!--TODO: Finisch Contact form (https://mailtrap.io/blog/php-email-contact-form/) -->
     <div class="container">
         <h1>Booking:</h1>
-        <form action="action_page.php">
+        <form method="POST" action="../../php/bookings-form.php" id="contact-form">
 
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
 
             <label for="country">Country</label>
             <select id="country" name="country">
@@ -47,22 +52,18 @@
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 
+            <!-- Checkbox for accepting terms/privacy policy -->
+            <p>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
+            </p>
+
+            <!--TODO: Implement reCAPTCHA Button (https://developers.google.com/recaptcha/docs/v3?hl=de)-->
+            <!--TODO: https://www.google.com/recaptcha/admin/site/711283244/setup-->
             <input type="submit" value="Submit">
 
         </form>
     </div>
 </main>
-
-<!-- Footer Section -->
-<footer id="bookings-footer">
-    <div class="container">
-        <p>&copy; 2024 Kyrox Music. All rights reserved.</p>
-
-        <div class="legal-info">
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Terms of Service</a>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
