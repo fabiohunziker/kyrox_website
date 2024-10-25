@@ -51,15 +51,23 @@ async function loadShows() {
                     <h3>${show.event}</h3>
                 </div>
                 <div class="show-info">
-                    <p><strong>Date:</strong> ${show.date}</p>
-                    <p><strong>Time:</strong> ${show.time}</p>
+                    <p><strong data-i18n="show_date"></strong> ${show.date}</p>
+                    <p><strong data-i18n="show_time"></strong> ${show.time}</p>
                 </div>
                 <div class="show-venue">
-                    <p><strong>Venue:</strong> ${show.venue}</p>
+                    <p><strong data-i18n="show_location"></strong> ${show.venue}</p>
                 </div>
                 <div class="show-links">
-                    <a href="${show.ticketLink}" class="button" target="_blank">Get Tickets</a>
-                    <a href="${show.locationLink}" class="button" target="_blank">View Location</a>
+                    <a href="${show.ticketLink || '#'}" class="button ${show.ticketLink ? '' : 'disabled'}" target="_blank">
+                        <span data-i18n="${show.ticketLink ? 'show_get_tickets' : 'show_no_tickets'}">
+                            ${show.ticketLink ? 'Get Tickets' : 'Tickets Unavailable'}
+                        </span>
+                    </a>
+                    <a href="${show.locationLink || '#'}" class="button ${show.locationLink ? '' : 'disabled'}" target="_blank">
+                         <span data-i18n="${show.locationLink ? 'show_view_location' : 'show_no_location'}">
+                            ${show.locationLink ? 'View Location' : 'No Location'}
+                        </span>
+                    </a>
                 </div>
             </div>
         `;

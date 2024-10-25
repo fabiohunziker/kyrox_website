@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCB7VJ2M');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYROX MUSIC - Portfolio</title>
@@ -14,6 +21,11 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCB7VJ2M"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- Header Section -->
 <header>
     <div class="headercontainer">
@@ -26,7 +38,7 @@
                 <li class="nav-list-item"><p class="header-link"><a href="#home" onclick="toggleBurgerMenu()">Home</a></p></li>
                 <li class="nav-list-item"><p class="header-link"><a href="#shows" onclick="toggleBurgerMenu()">Shows</a></p></li>
                 <li class="nav-list-item"><p class="header-link"><a href="#about" onclick="toggleBurgerMenu()">About</a></p><span class="nav-separator"></span></li>
-<!--                <li class="nav-list-item"><p class="header-link"><a href="#music" onclick="toggleBurgerMenu()">Music</a></p></li>-->
+                <li class="nav-list-item"><p class="header-link"><a href="#music" onclick="toggleBurgerMenu()">Music</a></p></li>
                 <li class="nav-list-item"><p class="header-link"><a href="#contact" onclick="toggleBurgerMenu()">Contact</a></p></li>
                 <li class="nav-list-item">
                     <div class="lang-dropdown">
@@ -56,7 +68,7 @@
         <div class="container">
             <h2 data-i18n="home_title"></h2>
             <p data-i18n="home_info"></p>
-            <p><a href="pages/bookings/bookings.html" class="book-button">BOOK NOW!</a></p>
+            <!--<p><a href="pages/bookings/bookings.html" class="book-button">BOOK NOW!</a></p>-->
         </div>
     </section>
 
@@ -69,6 +81,7 @@
                 <ul id="shows-list">
                 </ul>
             </div>
+            <p class="shows_dislaimer" data-i18n="shows_disabled_links_info"></p>
         </div>
     </section>
 
@@ -92,29 +105,25 @@
     </section>
 
     <!-- Section 3: Music -->
-<!--    <section id="music" class="music-section">-->
-<!--        <div class="container">-->
-<!--            <h2 data-i18n="music_title"></h2>-->
-<!--            <p data-i18n="music_p1"></p>-->
-<!--            <br>-->
-<!--            <div class="soundcloud-embed-container">-->
-<!--                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"-->
-<!--                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1873089782%3Fsecret_token%3Ds-YtSxCMnsdwY&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">-->
-<!--                </iframe>-->
-<!--                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">-->
-<!--                    <a href="https://soundcloud.com/kyrox-music" title="Kyrox" target="_blank" style="color: #cccccc; text-decoration: none;">Kyrox</a> ·-->
-<!--                    <a href="https://soundcloud.com/djkyrox/sets/edm/s-YtSxCMnsdwY"-->
-<!--                       title="EDM" target="_blank"-->
-<!--                       style="color: #cccccc; text-decoration: none;">EDM</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+    <section id="music" class="music-section">
+        <div class="container">
+            <h2 data-i18n="music_title"></h2>
+            <p data-i18n="music_p1"></p>
+            <br>
+            <div class="soundcloud-embed-container">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1873089782&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                </iframe>
+                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/kyrox-music" title="KYROX" target="_blank" style="color: #cccccc; text-decoration: none;">KYROX</a> ·
+                    <a href="https://soundcloud.com/kyrox-music/sets/edm" title="This is KYROX" target="_blank" style="color: #cccccc; text-decoration: none;">This is KYROX</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section 4: Contact -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact</h2>
+            <h2 data-i18n="contact_title"></h2>
             <p>Fabio Nicola Hunziker</p>
             <p class="social-links-mail"><a href="mailto:bookings@kyrox-music.com">bookings@kyrox-music.com</a></p>
             <p>+41 79 885 66 62</p>

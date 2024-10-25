@@ -9,12 +9,22 @@
 
   "shows_title": "Shows",
   "shows_info": "Alle meine kommenden Auftritte",
+  "shows_disabled_links_info": "Zu shows mit ausgegrauten Links gibt es keine öffentlichen Tickets oder Informationen zum Standort.",
+  "show_date": "Datum:",
+  "show_time": "Zeit:",
+  "show_location": "Standort:",
+  "show_get_tickets": "Tickets kaufen",
+  "show_no_tickets": "Keine Tickets",
+  "show_view_location": "Standort ansehen",
+  "show_no_location": "Kein Standort",
 
   "about_title": "Über mich",
-  "about_p1": "Ich bin Kyrox, ein Schweizer DJ und Musikproduzent mit einer tiefen Leidenschaft für die Schaffung einzigartiger und fesselnder Sounds. Ich lebe in der Schweiz und habe meine musikalische Reise schon in jungen Jahren begonnen. Seitdem habe ich mich dafür eingesetzt, die Grenzen der elektronischen Musik zu erweitern.",
-  "about_p2": "Als Produzent erforsche ich ständig neue Sounds und Techniken und suche nach Möglichkeiten, meine Musik weiterzuentwickeln und etwas Frisches in die Szene zu bringen. Als DJ liebe ich es, Sets zu kuratieren, die nicht nur die Leute bewegen, sondern auch einen bleibenden Eindruck hinterlassen.",
-  "about_p3": "Die Schweiz mag meine Heimat sein, aber die Musik ist meine universelle Sprache, und ich freue mich darauf, sie mit der Welt zu teilen.",
+  "about_p1": "Ich bin Kyrox, ich habe vor einer Weile mit dem Auflegen angefangen und bin vor kurzem auch in die Musikproduktion eingestiegen. Mein Lieblingsgenre war immer EDM, das ich auch gerne auflege und produziere. Einige meiner neuesten Musikstücke findet ihr unten in der Sektion „Musik“.",
+  "about_p2": "Als DJ versuche ich immer, neue Musik zu finden, die dem Publikum einen schönen Abend beschert. Das kann manchmal auch bedeuten, dass ich nach neuen Remixen, Mashups und Bearbeitungen älterer, sehr beliebter Songs suche. (Ich schaue definitiv nicht auf dich, Avicii)",
+  "about_p3": "Ich lebe derzeit in der Schweiz, wo ich geboren wurde und zur Schule gegangen bin, hier habe ich auch die meisten meiner Auftritte. Irgendwann in der Zukunft würde ich gerne mein Netzwerk erweitern und auch in anderen Ländern spielen.",
 
   "music_title": "Musik",
-  "music_p1": "Hier findest du einige meiner neuesten Musikstücke."
+  "music_p1": "Hier findest du einige meiner neuesten Tracks.",
+
+  "contact_title": "Kontakt"
 }

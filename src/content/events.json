@@ -1,10 +1,30 @@
 [
   {
+    "venue": "Aargau, CH",
+    "date": "10.11.2024",
+    "time": "16:00",
+    "event": "HOUSUN Outdoor Set"
+  },
+  {
     "venue": "Scherz, AG",
     "date": "29.11.2024",
     "time": "23:00",
     "event": "Turnfest Scherz",
     "ticketLink": "https://www.tv-scherz.ch/",
     "locationLink": "https://maps.app.goo.gl/e9f7gEnHN1meZrWD6"
+  },
+  {
+    "venue": "Switzerland",
+    "date": "15.08.2024",
+    "time": "22:00",
+    "event": "Private Event"
+  },
+  {
+    "venue": "Flösserplatz, Aarau",
+    "date": "31.10.2025",
+    "time": "22:00",
+    "event": "Dyoevents Halloween Party",
+    "ticketLink": "https://www.floesserplatz.ch/de",
+    "locationLink": "https://g.co/kgs/VXkzZJU"
   }
 ]

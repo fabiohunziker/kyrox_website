@@ -9,12 +9,22 @@
 
   "shows_title": "Shows",
   "shows_info": "All my upcoming shows",
+  "shows_disabled_links_info": "Shows with greyed out links don't have publicly available tickets/locations.",
+  "show_date": "Date:",
+  "show_time": "Time:",
+  "show_location": "Location:",
+  "show_get_tickets": "Get Tickets",
+  "show_no_tickets": "No Tickets",
+  "show_view_location": "View Location",
+  "show_no_location": "No Location",
 
   "about_title": "About me",
-  "about_p1": "I’m Kyrox, a Swiss DJ and music producer driven by a deep passion for creating unique and captivating sounds. Based in Switzerland, my journey in music started at a young age, and since then, I’ve been dedicated to pushing the boundaries of electronic music.",
-  "about_p2": "As a producer, I’m constantly exploring new sounds and techniques, looking for ways to evolve my music and bring something fresh to the scene. As a DJ, I love curating sets that not only make people move but leave a lasting impact.",
-  "about_p3": "Switzerland may be my home base, but music is my universal language, and I’m excited to share it with the world.",
+  "about_p1": "I’m Kyrox, I started DJing a while ago and recently got into music production aswell. My top genre was always EDM, which i also love to DJ and produce. Some of my latest music you can find below in the 'Music' section.",
+  "about_p2": "As a DJ, I always try to look for new music that makes the crowd enjoy an evening. This can sometimes also mean looking for new remixes, mashups and edits of older, very popular songs. (Definitely not looking at you, Avicii)",
+  "about_p3": "I currently live in Switzerland where I was born and went to school, here I currently have most of my gigs as well. Some time in the future I would love to expand my network and start playing in different countries aswell.",
 
   "music_title": "Music",
-  "music_p1": "Here you can find some of my latest music."
+  "music_p1": "Here you can find some of my latest music.",
+
+  "contact_title": "Contact"
 }

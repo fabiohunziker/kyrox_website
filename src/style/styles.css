@@ -183,7 +183,20 @@ header .header-left h1 {
 }
 
 .shows-section p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.shows_dislaimer {
+    align-self: center;
+    width: fit-content;
+    background-color: #2c2c2c;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    margin: 20px auto auto;
+    border-style: solid;
+    border-color: #2c2c2c;
+    border-width: 0;
+    border-radius: 8px;
 }
 
 #shows-list {
@@ -220,14 +233,14 @@ header .header-left h1 {
 }
 
 .show-details h3 {
-    font-size: 1.5em; /* Larger title */
+    font-size: 1.2em; /* Larger title */
+    font-weight: 600;
 }
 
 .show-title {
     margin: 15px 20px;
     text-align: left;
     line-height: 30px;
-    font-size: 0.85em;
     width: 25%;
 }
 
@@ -251,7 +264,7 @@ header .header-left h1 {
     margin: 5px 20px;
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 20%;
 }
 
 .button {
@@ -265,13 +278,20 @@ header .header-left h1 {
     text-align: center;
 }
 
+.button.disabled {
+    background-color: grey;
+    color: white;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 .button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #033657; /* Darker shade on hover */
 }
 
 /* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
 .about-section {
-    background-color: #393939;
+    background-color: #333333;
     color: floralwhite;
     padding: 60px 0;
     text-align: center;
@@ -316,7 +336,7 @@ header .header-left h1 {
 
 /* ++++++++++++++++++++++++++++++ MUSIC SECTION ++++++++++++++++++++++++++++++ */
 .music-section {
-    background-color: #292929;
+    background-color: #252525;
     color: floralwhite;
     padding: 60px 0;
     text-align: center;
@@ -409,6 +429,73 @@ footer .legal-info a:hover {
 
 
 /* ++++++++++++++++++++++++++++++ RESPONSIVE DESIGN ++++++++++++++++++++++++++++++ */
+@media (max-width: 1000px) {
+    /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
+    #shows-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show-item {
+        width: 65%;
+    }
+
+    .show-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-details p {
+        margin: 5px 0; /* Space between paragraphs */
+        text-align: center;
+    }
+
+    .show-details h3 {
+        font-size: 1.5em; /* Larger title */
+    }
+
+    .show-title {
+        width: 100%;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    .show-info {
+        display: flex;
+        flex-direction: row; /* Stack title and date/time vertically */
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .show-info p {
+        margin: 0 10px;
+    }
+
+    .show-venue {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .show-links {
+        margin: 5px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .button {
+        margin-bottom: 15px;
+    }
+}
+
 @media (max-width: 900px) {
     .headercontainer {
         width: 100%;
@@ -495,71 +582,6 @@ footer .legal-info a:hover {
         font-size: 2em;
     }
 
-
-    /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
-    #shows-list {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .show-item {
-        width: 65%;
-    }
-
-    .show-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .show-details p {
-        margin: 5px 0; /* Space between paragraphs */
-        text-align: center;
-    }
-
-    .show-details h3 {
-        font-size: 1.5em; /* Larger title */
-    }
-
-    .show-title {
-        width: 100%;
-        text-align: center;
-        font-size: 0.85em;
-    }
-
-    .show-info {
-        display: flex;
-        flex-direction: row; /* Stack title and date/time vertically */
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-        margin-top: 0;
-    }
-
-    .show-info p {
-        margin: 0 10px;
-    }
-
-    .show-venue {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .show-links {
-        margin: 5px 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .button {
-        margin-bottom: 15px;
-    }
 
     /* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
     .about-content {
