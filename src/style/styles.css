@@ -171,7 +171,7 @@ header .header-left h1 {
 
 /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
 .shows-section .container {
-    background-color: #393732;
+    background-color: #333333;
     color: #FAFCFF;
     padding: 25px 0 40px 0;
     text-align: center;
@@ -291,7 +291,7 @@ header .header-left h1 {
 
 /* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
 .about-section {
-    background-color: #2c2a27;
+    background-color: #222222;
     color: #FAFCFF;
     padding: 60px 0;
     text-align: center;
@@ -336,7 +336,7 @@ header .header-left h1 {
 
 /* ++++++++++++++++++++++++++++++ MUSIC SECTION ++++++++++++++++++++++++++++++ */
 .music-section {
-    background-color: #28231C;
+    background-color: #1c1c1c;
     color: #FAFCFF;
     padding: 60px 0;
     text-align: center;

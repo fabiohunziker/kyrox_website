@@ -1,6 +1,14 @@
 [
   {
-    "venue": "Aargau, CH",
+    "venue": "Wohlen, CH",
+    "date": "09.11.2024",
+    "time": "22:00",
+    "event": "Zanzibar Wohlen",
+    "ticketLink": "https://zanzibarwohlen.ch/",
+    "locationLink": "https://maps.app.goo.gl/duYRypaU5x8dSSGdA"
+  },
+  {
+    "venue": "Hallwil, CH",
     "date": "10.11.2024",
     "time": "16:00",
     "event": "HOUSUN Outdoor Set"
@@ -23,7 +31,7 @@
   },
   {
     "venue": "Switzerland",
-    "date": "15.08.2024",
+    "date": "15.08.2025",
     "time": "22:00",
     "event": "Private Event"
   },
