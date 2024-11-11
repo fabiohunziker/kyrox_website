@@ -1,0 +1,31 @@
+{
+  "header_home": "Accueil",
+  "header_shows": "Spectacles",
+  "header_about": "A mon sujet",
+  "header_music": "Musique",
+  "header_contact": "Contact",
+
+  "home_title": "KYROX",
+  "home_info": "DJ et producteur suisse",
+
+  "shows_title": "Spectacles",
+  "shows_info": "Tous mes prochains spectacles",
+  "shows_disabled_links_info": "Les spectacles dont le lien est grisé n'ont pas de billets ou de lieux disponibles publiquement.",
+  "show_date": "Date :",
+  "show_time": "Le temps :",
+  "show_location": "Localisation :",
+  "show_get_tickets": "Obtenir des billets",
+  "show_no_tickets": "Pas de billets",
+  "show_view_location": "Voir l'emplacement",
+  "show_no_location": "Pas de localisation",
+
+  "about_title": "A mon sujet",
+  "about_p1": "Je m'appelle Kyrox, j'ai commencé à faire du DJing il y a quelque temps et je me suis récemment lancé dans la production musicale. Mon genre de prédilection a toujours été l'EDM, que j'aime également DJer et produire. Quelques-unes de mes dernières musiques se trouvent ci-dessous dans la section 'Musique'.",
+  "about_p2": "En tant que DJ, j'essaie toujours de trouver de nouvelles musiques qui permettent au public d'apprécier la soirée. Cela peut parfois signifier la recherche de nouveaux remixes, mashups et éditions de chansons plus anciennes et très populaires.",
+  "about_p3": "Je vis actuellement en Suisse, où je suis né et où je suis allé à l'école. C'est également ici que je donne la plupart de mes concerts. Dans le futur, j'aimerais élargir mon réseau et commencer à jouer dans d'autres pays.",
+
+  "music_title": "Musique",
+  "music_p1": "Vous trouverez ici quelques-unes de mes dernières musiques.",
+
+  "contact_title": "Contact"
+}

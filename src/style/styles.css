@@ -133,7 +133,7 @@ header .header-left h1 {
 .home-section .container {
     height: 95vh;
     background-color: black;
-    background-image: url("../imgs/alt_background.jpg");
+    background-image: url("../imgs/background.jpg");
     background-size: cover;
     background-position: center;
     color: #fffcfc;
@@ -494,6 +494,10 @@ footer .legal-info a:hover {
     .button {
         margin-bottom: 15px;
     }
+
+    .shows_dislaimer {
+        width: 50%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -673,6 +677,10 @@ footer .legal-info a:hover {
     /* ++++++++++++++++++++++++++++++ SHOWS SECTION ++++++++++++++++++++++++++++++ */
     .show-item {
         width: 85%;
+    }
+
+    .shows_dislaimer {
+        width: 70%;
     }
 
     /* ++++++++++++++++++++++++++++++ ABOUT SECTION ++++++++++++++++++++++++++++++ */
